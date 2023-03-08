@@ -4,7 +4,7 @@ const app = express();
 dotenv.config();
 const port = 3000;
 const apiUrl = process.env.API_URL;
-console.log(process.env);
+
 app.use(express.static("public"));
 
 const html = `
