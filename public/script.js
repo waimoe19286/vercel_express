@@ -3,7 +3,7 @@ const fetchData = async () => {
   if (url) {
     const response = await fetch(`${url}/user`);
     // const data = await response;
-    console.log(response);
+    console.log(response.json());
   } else {
     window.location.href = "/api";
   }
