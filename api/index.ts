@@ -26,7 +26,7 @@ app.get("/api", (req: Request, res: Response) => {
 });
 
 app.get("/api/user", (req: Request, res: Response) => {
-  res.send({ name: "user1", email: "user1@gmail.com" });
+  res.send(JSON.stringify({ name: "user1", email: "user1@gmail.com" }));
 });
 
 app.listen(3000, () => {
