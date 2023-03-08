@@ -25,10 +25,9 @@ app.get("/api", (req: Request, res: Response) => {
   res.send(html);
 });
 
-app.get("/api/user", (req: Request, res: Response) => {
-  res.send(JSON.stringify({ name: "user1", email: "user1@gmail.com" }));
+app.get("/api/users", (req: Request, res: Response) => {
+  res.send(JSON.stringify({ name: "waimoe", age: "wai" }));
 });
-
 app.listen(3000, () => {
   console.log("Sever listen ", port);
 });
