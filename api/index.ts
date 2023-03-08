@@ -21,7 +21,7 @@ const html = `
   </body>
 </html>`;
 
-app.get("/api", (req: Request, res: Response) => {
+app.get("/wai", (req: Request, res: Response) => {
   res.send(html);
 });
 
