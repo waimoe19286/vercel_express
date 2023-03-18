@@ -6,7 +6,7 @@ import formidable from "formidable"; // ပုံတွေကိုတစ်ပ�
 import { v4 as uuidv4 } from "uuid"; // redom  string လိုချင်လို့ သုံးတာ
 const app = express();
 dotenv.config();
-const port = 3155;
+const port = 3105;
 const apiUrl = process.env.API_URL;
 
 app.use(express.static("public"));
@@ -51,6 +51,6 @@ app.post("/api/fileupload", (req: Request, res: Response) => {
   // res.end();
 });
 
-app.listen(3155, () => {
+app.listen(3105, () => {
   console.log("Sever listen ", port);
 });
